@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | Ismail Digital</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #ffffff;
+      color: #111;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1rem;
+    }
+
+    .card {
+      max-width: 640px;
+      width: 100%;
+      text-align: center;
+      padding: 3rem 2.5rem;
+      border: 0.5px solid #e0d9f8;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 4px 24px rgba(98, 54, 255, 0.06);
+    }
+
+    .emoji-row {
+      font-size: 22px;
+      letter-spacing: 6px;
+      margin-bottom: 1rem;
+    }
+
+    .icon-circle {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: #6236FF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.75rem;
+    }
+
+    .icon-circle svg {
+      width: 42px;
+      height: 42px;
+      stroke: #fff;
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.65;
+      margin-bottom: 2rem;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .info-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 2rem;
+      padding: 0.85rem 1.25rem;
+      background: #f9f7ff;
+      border-radius: 8px;
+      border: 0.5px solid #e0d9f8;
+    }
+
+    .info-banner svg {
+      width: 16px;
+      height: 16px;
+      stroke: #6236FF;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    .info-banner strong { color: #6236FF; }
+
+    .btn-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: #6236FF;
+      color: #fff;
+      border: none;
+      padding: 0.85rem 2rem;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s ease;
+    }
+
+    .btn-primary:hover { background: #5228e8; }
+
+    .btn-secondary {
+      display: inline-block;
+      background: #fff;
+      color: #6236FF;
+      border: 1.5px solid #6236FF;
+      padding: 0.85rem 2rem;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s ease;
+    }
+
+    .btn-secondary:hover { background: #f3eeff; }
+
+    .divider {
+      border: none;
+      border-top: 0.5px solid #ebebeb;
+      margin: 0 0 1.5rem;
+    }
+
+    .social-label {
+      font-size: 13px;
+      color: #aaa;
+      margin-bottom: 0.75rem;
+    }
+
+    .social-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: #6236FF;
+      border: 0.5px solid #c9befc;
+      border-radius: 6px;
+      padding: 7px 14px;
+      cursor: pointer;
+      background: #fff;
+      text-decoration: none;
+      transition: background 0.12s ease;
+    }
+
+    .social-btn:hover { background: #f3eeff; }
+
+    .social-btn svg {
+      width: 14px;
+      height: 14px;
+      stroke: #6236FF;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 2rem 1.25rem; }
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    
+
+    <div class="icon-circle">
+      <svg viewBox="0 0 24 24">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+
+    <h1>Thank You!</h1>
+    <p class="subtitle">Your message has been received successfully. I'll get back to you as soon as possible — usually within 24 hours.</p>
+
+    <div class="info-banner">
+      <svg viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polyline points="12 6 12 12 16 14"></polyline>
+      </svg>
+      Expected reply within <strong>24 hours</strong>
+    </div>
+
+    <div class="btn-row">
+      <a href="index.html"  target="_blank" class="btn-primary">Go to Home</a>
+      <a href="contact.html"  target="_blank" class="btn-secondary">Send Another</a>
+    </div>
+
+    <hr class="divider" />
+
+    <p class="social-label">Or connect with me on</p>
+    <div class="social-row">
+      <!-- Update href links below with your actual profiles -->
+      <a href="https://www.linkedin.com/in/ismail-nmb" target="_blank" class="social-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+        LinkedIn
+      </a>
+      <a href="https://www.instagram.com/ismail_growth_lab/" target="_blank" class="social-btn">
+        <svg viewBox="0 0 24 24">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+        Instagram
+      </a>
+      <a href="mailto:ismailliyana355@gmail.com" class="social-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        Email
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
